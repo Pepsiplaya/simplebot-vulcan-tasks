@@ -89,7 +89,7 @@ public class LeaguePanel {
         ctx.game.tab(Game.Tab.QUESTS);
         ctx.menuActions.clickButton(41222167);
         ctx.sleep(1000);
-        ctx.menuActions.clickButton(42991640);
+        ctx.menuActions.clickButton(42991650);
         return ctx.onCondition(() -> isLeaguePanelOpen(), 1000, 5);
     }
 

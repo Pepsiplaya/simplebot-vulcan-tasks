@@ -164,7 +164,7 @@ public class LeagueScript extends Script implements LoopingScript, MouseListener
             return;
         }
 
-        setScriptStatus("Crunching numbers...");
+        setScriptStatus("Chrunching numbers...");
         final SimpleWidget[] children = leaguesWidget.getDynamicChildren();
         if (children == null || children.length == 0) {
             return;
@@ -172,7 +172,7 @@ public class LeagueScript extends Script implements LoopingScript, MouseListener
         for (final SimpleWidget child : children) {
             final String taskName = ScriptUtils.stripHtml(child.getText().toLowerCase());
             this.tasks.stream().filter(task -> task.getName().equalsIgnoreCase(taskName)).findFirst().ifPresent((task) -> {
-                if (child.getWidget().getTextColor() == 0xff7700) {
+                if (child.getWidget().getTextColor() == 0xff981f) {
                     task.setCompleted(true);
                     ctx.log("Task " + task.getName() + " is already completed");
                 }
